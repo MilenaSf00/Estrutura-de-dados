@@ -8,7 +8,7 @@ public class Aluno {
 
 
 
-    
+
     public Aluno(String nome, int idade, double nota){
         this.nome=nome;
         this.idade=idade;
@@ -33,12 +33,5 @@ public class Aluno {
         this.nota = nota;
     }
 
-
-
-    @Override
-    public String toString() {
-        
-        return getNome();
-    }
 
 }
