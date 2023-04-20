@@ -5,8 +5,6 @@ public class AlunoVetor implements IVetor{
     private Aluno[] alunos;
     private int totalDeAlunos;
   
-
-   
     public AlunoVetor(int tamanho){
        alunos= new Aluno[tamanho];
        this.totalDeAlunos = 0; 
@@ -20,7 +18,7 @@ public class AlunoVetor implements IVetor{
        totalDeAlunos++;
        return true;
     }
-
+ 
     @Override
     public int tamanho (){
         return totalDeAlunos;
@@ -37,7 +35,7 @@ public class AlunoVetor implements IVetor{
         } 
         return false;
     }
-
+ 
     @Override  
     public boolean cheio() {
        if(totalDeAlunos == alunos.length){
@@ -46,7 +44,7 @@ public class AlunoVetor implements IVetor{
        return false;
 
     }
-
+ 
     @Override
     public boolean remove(Aluno al) {
         int indice = -1;
@@ -66,7 +64,6 @@ public class AlunoVetor implements IVetor{
         return false;
     }
     
-
 
     @Override
     public void garanteEspaco(){
