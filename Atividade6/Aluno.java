@@ -12,6 +12,9 @@ public class Aluno {
         this.idade=idade;
         this.nota=nota;
     }
+
+
+    
     public String getNome() {
         return nome;
     }

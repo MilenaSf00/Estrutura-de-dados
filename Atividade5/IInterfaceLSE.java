@@ -7,4 +7,6 @@ public interface IInterfaceLSE {
     public boolean remove(int info);
     public int tamanho();
     public void imprimeLista ();
+
+    
 }
