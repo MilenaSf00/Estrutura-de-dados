@@ -1,6 +1,4 @@
 package Atividade3;
-
-
 public class AlunoVetor implements IVetor{
     private Aluno[] alunos;
     private int totalDeAlunos;
@@ -10,7 +8,6 @@ public class AlunoVetor implements IVetor{
        this.totalDeAlunos = 0; 
     }
 
-    
     @Override
     public boolean adicionarAluno(Aluno al) {
        garanteEspaco();
@@ -18,13 +15,10 @@ public class AlunoVetor implements IVetor{
        totalDeAlunos++;
        return true;
     }
- 
     @Override
     public int tamanho (){
         return totalDeAlunos;
     }
-
-   
 
     @Override
     public boolean contem(Aluno al){

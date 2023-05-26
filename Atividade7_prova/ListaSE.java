@@ -1,16 +1,20 @@
-package Atividade5;
+package Atividade7_prova;
 
 public class ListaSE implements IInterfaceLSE{
   private Noh inicio;
   private Noh fim;
-  private int totalDeAlunos;
+  private int total;
 
   public ListaSE(){
     this.inicio = null;
     this.fim = null;
-    this.totalDeAlunos = 0;
+    this.total = 0;
   }
 
+  public Noh getInicio() {
+      return inicio;
+  }
+  
   @Override
   public void insereInicio(int info) {
     Noh novo = new Noh(info);
@@ -22,7 +26,7 @@ public class ListaSE implements IInterfaceLSE{
           inicio.setAnterior(novo);
           inicio = novo;
       }
-      totalDeAlunos ++;
+      total ++;
   }
 
   @Override
@@ -71,18 +75,31 @@ public class ListaSE implements IInterfaceLSE{
     }return true;
   }
 
-@Override
-public int tamanho() {
-    return totalDeAlunos;
-}
+  @Override
+  public int tamanho() {
+      return total;
+  }
 
 @Override
-    public void imprimeLista (){
-        Noh  nohAtual = inicio;
-        System.out.println("Lista: ");
-        while (nohAtual != null) {
-            System.out.println(" - " +nohAtual.getInformacao());
-            nohAtual = nohAtual.getProximo();
+  public void imprimeLista (){
+    Noh  nohAtual = inicio;
+    System.out.println("Lista: ");
+      while (nohAtual != null) {
+          System.out.println(" - " +nohAtual.getInformacao());
+          nohAtual = nohAtual.getProximo();
         }
+  }
+
+  @Override
+  public void imprime_rec(Noh noh) {
+      if (noh == null) {
+        return;
+      }else{
+      System.out.println(noh.getInformacao()); 
+      imprime_rec(noh.getProximo()); 
     }
+  }
 }
+    
+
+  

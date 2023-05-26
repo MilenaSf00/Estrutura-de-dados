@@ -1,10 +1,11 @@
-package Atividade5;
+package Atividade9_prova;
 
 public class Noh {
     private int informacao;
     private Noh anterior;
     private Noh proximo;
-    
+
+
     public Noh (int info){
         this.informacao = info;
         this.anterior = null;

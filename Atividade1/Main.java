@@ -1,10 +1,6 @@
 package Atividade1;
-
 /*
- * Criação do objeto coordenada1 e coordenada2 da classe PontoCartesiano.
- * Criação do objeto ponto que recebe coordenada1 e coordenada2. Com o objeto 
- * ponto, posso utilizar o método distanciaEuclidiana().
- * 
+ * TAD PontoCartesiano
  */
 
  public class Main {

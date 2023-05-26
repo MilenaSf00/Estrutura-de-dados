@@ -1,5 +1,7 @@
 package Atividade2;
-
+/*
+ * criar a classe Aluno com seus atributos, adaptar a implementação do Vetor para armazenar objetos Aluno e ajustar os métodos.
+ */
 public class Main {
     public static void main (String[] args){
         AlunoVetor vetor = new AlunoVetor();

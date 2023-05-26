@@ -1,13 +1,9 @@
-
 package Atividade4;
 
 public class Aluno {
     private String nome;
     private int idade;
     private double nota;
-
-
-
 
     public Aluno(String nome, int idade, double nota){
         this.nome=nome;
@@ -32,6 +28,4 @@ public class Aluno {
     public void setNota(double nota) {
         this.nota = nota;
     }
-
-
 }

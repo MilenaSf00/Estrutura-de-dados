@@ -1,6 +1,8 @@
 package Atividade6;
 
-
+/*
+ * Atividade 6.Implemente um LDS Génerica.
+ */
 
 public class Main {
     public static void main (String[] args){
@@ -14,7 +16,6 @@ public class Main {
         lista.insereFim(aluno1);
 
         lista.imprimeLista();
-        
         System.out.println("Tamanho da lista: "+lista.tamanho());
     }
 }
