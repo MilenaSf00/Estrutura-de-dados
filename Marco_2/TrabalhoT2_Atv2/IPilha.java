@@ -6,6 +6,6 @@ public interface IPilha {
     public Object top(); 
     public boolean isEmpty();
     public int size();
-    public  boolean testaPalindromo(String palavra);
-    public void imprimeResultado(String palavra);
+    public  boolean palindromo(String palavra);
+    public void printResultado(String palavra);
 }

@@ -56,7 +56,7 @@ public class PilhaVet implements IPilha {
     }
 
     @Override
-    public boolean testaPalindromo(String palavra){ 
+    public boolean palindromo(String palavra){ 
         PilhaVet pilhaLocal = new PilhaVet(palavra.length());
         for (int i = 0; i < palavra.length(); i++) {
             pilhaLocal.Push(palavra.charAt(i));
@@ -72,9 +72,9 @@ public class PilhaVet implements IPilha {
         return false;
     }
     @Override
-    public void imprimeResultado(String palavra) {
+    public void printResultado(String palavra) {
         System.out.println("Palavra: " + palavra);
-        System.out.println("É palíndromo? " + testaPalindromo(palavra));
+        System.out.println("É palíndromo? " + palindromo(palavra));
         System.out.println();
     }
 }

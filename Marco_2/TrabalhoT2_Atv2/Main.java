@@ -6,11 +6,11 @@ public class Main {
     public static void main(String[] args) {
         PilhaVet pilha = new PilhaVet(5);
         
-        pilha.imprimeResultado("ADA");
-        pilha.imprimeResultado("ABCD");
-        pilha.imprimeResultado("ABCCBA");
-        pilha.imprimeResultado("ARARA");
-        pilha.imprimeResultado("ana");
+        pilha.printResultado("ADA");
+        pilha.printResultado("ABCD");
+        pilha.printResultado("ABCCBA");
+        pilha.printResultado("ARARA");
+        pilha.printResultado("ana");
 
         System.out.println("Tamanho do vetor: " + pilha.getTamanhoVetor());
     }
