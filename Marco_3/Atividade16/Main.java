@@ -27,6 +27,13 @@ public class Main {
 
         System.out.println("Pré-ordem:");
         abb.preOrdem();
+        System.out.println("\nRemover 11");
+        abb.remove(11);
+        System.out.println("Pré-ordem após remoção:");
+        abb.preOrdem();
+        
+
+        
 
         System.out.println("Em ordem:");
         abb.emOrdem();

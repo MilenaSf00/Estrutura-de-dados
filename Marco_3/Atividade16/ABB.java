@@ -159,6 +159,41 @@ public class ABB {
         }
     }
 
+    
+    public void remove(int element) {
+        this.raiz = remove(this.raiz, element);
+    }
+
+    private Noh remove(Noh node, int element) {
+        if (node == null) {
+            return null;
+        }
+
+        if (element < node.getValor()) {
+            node.setEsquerda(remove(node.getEsquerda(), element));
+        } else if (element > node.getValor()) {
+            node.setDireita(remove(node.getDireita(), element));
+        } else {
+            if (node.getEsquerda() == null) {
+                return node.getDireita();
+            } else if (node.getDireita() == null) {
+                return node.getEsquerda();
+            } else {
+                Noh sucessor = encontraValorMin(node.getDireita());
+                node.setValor(sucessor.getValor());
+                node.setDireita(remove(node.getDireita(), sucessor.getValor()));
+            }
+        }
+    
+        return node;
+    }
+    
+    public Noh encontraValorMin(Noh node) {
+        while (node.getEsquerda() != null) {
+            node = node.getEsquerda();
+        }
+        return node;
+    }
 }
 
 
